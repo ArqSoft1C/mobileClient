@@ -17,7 +17,7 @@ public class MyApolloClient {
             loggingInterceptor.setLevel((HttpLoggingInterceptor.Level.BODY));
             OkHttpClient okHttpClient = new OkHttpClient.Builder()
                     .addInterceptor(loggingInterceptor)
-                    .build();
+            .build();
             myApolloClient = ApolloClient.builder()
                     .serverUrl(BASE_URL)
                     .okHttpClient(okHttpClient)
